@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us |</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/quote.css">
+</head>
+<body>
+    <!-- header section -->
+  <header>
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="logo"> <!-- Replace with actual image -->
+      <span>ZAHIRX</span>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="About-Us.html">About Us</a>
+      <div class="dropdown" id="servicesDropdown">
+        <div class="dropdown-toggle" onclick="toggleDropdown(event)">Services <img src="assets/images/downarrow.png"
+            alt="▼" style="width: 20px; vertical-align: middle;"></div>
+        <div class="dropdown-content">
+          <a href="electrical.html">Electrical</a>
+          <a href="cctv.html">CCTV</a>
+          <a href="Bms.html">BMS</a>
+        </div>
+      </div>
+      <a href="projects.html">Projects</a>
+      <a href="get_quote.html" class="quote-btn">Get a Quote</a>
+    </nav>
+  </header>
+<section class="breadcrumb-section">
+  <div class="breadcrumb-overlay">
+    <div class="breadcrumb-content">
+      <div class="breadcrumb-path">
+        <a href="index.html">Home</a>
+        <span>❯</span>
+        <strong>Contact Us</strong>
+      </div>
+      <p class="breadcrumb-subtext">Sparking Innovation, Illuminating Lives</p>
+    </div>
+  </div>
+</section>
+  <div class="form-container">
+    <h1>Get In Touch With Us</h1>
+    <h2>For More Information About Our Services.</h2>
+
+    <div class="form-title">Booking Your Service Today ! <img src="assets/images/material-symbols_electric-bolt-outline.png" style="width:15px"></div>
+    <div class="form-subtitle">Whether you're planning a new project or need emergency support, we're available to provide fast and reliable assistance.</div>
+
+    <form id="serviceForm">
+      <div class="field">
+        <label>First name</label>
+        <input type="text" name="fname" placeholder="e.g xxxx" required>
+      </div>
+      <div class="field">
+        <label>Last name</label>
+        <input type="text" name="lname" placeholder="e.g yyyy" required>
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="e.g xxxx@gmail.com" required>
+      </div>
+      <div class="field">
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="e.g 12345678" required>
+      </div>
+      <div class="field">
+        <label>Pick the date</label>
+        <input type="date" name="date" required>
+      </div>
+      <div class="field">
+        <label>Choose Your Time</label>
+        <input type="time" name="time" required>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">I have read and accepted terms and Privacy</label>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <button class="close-btn" onclick="closePopup()">×</button>
+      <img src="assets/images/verified.png" alt="Verified">
+      <p>"We've received your inquiry. Our team will contact you soon."</p>
+      <a href="index.html"><button class="btn-home">Go Back Home</button></a>
+    </div>
+  </div>
+  <!-- ---footer section----- -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="logo-content">
+          <div>
+            <img src="assets/images/logo.png" alt="Logo">
+          </div>
+          <div>
+            <h3>ZAHIRX</h3>
+          </div>
+        </div>
+        <p>"At ZAHIRX Delivering Electrical Solutions With Precision and Care"</p>
+        <div class="footer-contact">
+          <img src="assets/images/mail.png" alt="Email">
+          <span>Zahrix@gmail.com</span>
+        </div>
+        <div class="footer-contact">
+          <img src="assets/images/location.png" alt="Location">
+          <span>23/9, Main Road, Chennai</span>
+        </div>
+        <div class="footer-contact">
+          <img src="assets/images/call.png" alt="Phone">
+          <span>+91 86456780987</span>
+        </div>
+      </div>
+      <div class="footer-center">
+        <div class="footer-middle">
+          <div class="subscribe-box">
+            <label for="email">Subscribe</label>
+            <form onsubmit="validateEmail(event)">
+              <input type="email" id="email" placeholder="Enter your email" required>
+              <button type="submit">SIGN UP</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Our Services</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Team of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact Support</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="social-icons">
+            <a href="https://linkedin.com"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://instagram.com"><img src="assets/images/insta.png" alt="Instagram"></a>
+            <a href="https://facebook.com"><img src="assets/images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="assets/images/twitter.png" alt="Twitter"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Developed & Maintained by ZAHIRX - All rights reserved.
+    </div>
+  </footer>
+
+<script src="assets/js/main-script.js"></script>
+  <script>
+    const form = document.getElementById("serviceForm");
+    const popup = document.getElementById("popup");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      popup.style.display = "flex";
+popup.classList.add("show");
+    });
+
+    function closePopup() {
+     popup.classList.remove("show");
+      form.reset();
+    }
+  </script>
+</body>
+</html>
