@@ -237,9 +237,9 @@ nav a:hover {
 
 .visuals img.lightning {
   position: absolute;
-  bottom: 140px;
-  left: 100px;
-  width: 40px;
+  bottom: 180px;
+  left: 140px;
+  width: 60px;
   z-index: 3;
 }
 
@@ -1061,6 +1061,9 @@ nav a:hover {
   color: #4a64c8;
   font-size: 16px;
 }
+.zahrix-projects-head .section-label img{
+  width:20px;
+}
 
 .zahrix-projects-head .section-title {
   font-size: 30px;
@@ -1807,6 +1810,7 @@ nav a:hover {
   }
   .visuals img.lightning {
     left: -60px;
+    width:30px;
   }
   .popup {
     right: -200px;
